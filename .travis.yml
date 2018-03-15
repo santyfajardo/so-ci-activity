@@ -1,0 +1,12 @@
+language: bash
+
+notifications:
+  email: false
+  slack:
+    on_success: always
+    on_failure: never
+
+before_script: cd A*
+
+script:
+    - bash commands_test.sh
